@@ -6,8 +6,12 @@ CREATE TABLE `movies` (
   `year` varchar(255) NOT NULL,
   `color` tinyint(1) NOT NULL,
   `duration` int NOT NULL,
+  `user_id` int,
   PRIMARY KEY (`id`)
-) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+
+  
+); 
 INSERT INTO
   `movies` (title, director, year, color, duration)
 VALUES

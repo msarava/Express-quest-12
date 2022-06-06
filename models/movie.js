@@ -38,7 +38,7 @@ const findOne = (id) => {
     .then(([results]) => results[0]);
 };
 
-const create = ({ title, director, year, color, duration, user_id }) => {
+const create = ({ title, director, year, color, duration }, user_id) => {
   return db
     .query(
       'INSERT INTO movies (title, director, year, color, duration, user_id) VALUES (?, ?, ?, ?, ?,?)',
